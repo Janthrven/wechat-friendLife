@@ -1,0 +1,13 @@
+<!--pages/compass/compass.wxml-->
+<view class="container2">
+  <!-- 图片区域 -->
+  <image src="/images/mypass.jpg" mode="widthFix" style="transform:rotate({{rotate}}deg)"></image>
+
+  <!-- 文字区域 -->
+  <view class="status">
+    <text class="bigTxt">{{degree}}° {{direction}}</text>
+    <text class="smallTxt">北纬{{lat}}  东经{{lon}}</text>
+    <text class="smallTxt">海拔{{alt}}米</text>
+  </view>
+
+</view>

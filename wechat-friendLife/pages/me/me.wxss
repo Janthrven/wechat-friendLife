@@ -1,0 +1,22 @@
+/**index.wxss**/
+.container{
+  background-color: #87CEFA;
+}
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #FF1493;
+}
+
+.userinfo-avatar {
+  overflow: hidden;
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+.calendar {
+  --calendar-height:500px;
+}
+

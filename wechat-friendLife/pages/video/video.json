@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "视频",
+  "usingComponents": {
+    "van-divider": "@vant/weapp/divider/index"
+  }
+}

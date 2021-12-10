@@ -1,0 +1,18 @@
+<!--pages/video/video.wxml-->
+<view class="video">
+  <!-- 头部 -->
+  <view class="top">
+    <image class="img" src="{{picture}}" mode="widthFix"></image>
+  </view>
+  <!-- 分割线 -->
+  <van-divider contentPosition="center" customStyle="color: #1989fa; border-color: #1989fa; font-size: 18px;">
+    我的视频
+  </van-divider>
+  <!-- 视频列表 -->
+  <view class="video_list look">
+    <view wx:for="{{videolist}}" wx:key="id">
+      <video src="{{item.url}}" title="{{item.video}}"></video>
+    </view>
+
+  </view>
+</view>

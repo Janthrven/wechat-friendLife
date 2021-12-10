@@ -1,0 +1,53 @@
+<!--pages/myinformation/myinformation.wxml-->
+<view>
+<!-- 我的信息 -->
+<view class="myinformation">
+    <image class=" myPicture" show-menu-by-longpress="true" src="{{me[2]}}"></image>
+  <text class="iconfont icon-ren3 myName">{{me[1]}}</text>
+  <image class="like" src="{{likeUrl}}" bindtap="likeMe"></image>
+
+  <image class=" QRcode" show-menu-by-longpress="true" src="{{me[4]}}"></image>
+</view>
+
+<view class="table">
+
+  <view class="tr">
+<view class="td">微信昵称：</view>
+<view class="userNickNameStyle ~active-gray td">
+            <open-data type='userNickName'></open-data>
+        </view>
+</view>
+
+<view class="tr">
+<view class="td">学校：</view>
+<view class="td">{{me[5]}}</view>
+</view>
+
+<view class="tr">
+  <view class="td">院系：</view>
+  <view class="td">{{me[6]}}</view>
+</view>
+
+<view class="tr">
+  <view class="td">班别：</view>
+  <view class="td">{{me[3]}}</view>
+</view>
+
+<view class="tr">
+  <view class="td">学号：</view>
+  <view class="td">{{me[0]}}</view>
+</view>
+
+<view class="tr">
+  <view class="td">介绍：</view>
+  <view class="td">{{me[8]}}</view>
+</view>
+
+<view class="tr">
+  <view class="td">爱好：</view>
+  <view class="td">{{me[7]}}</view>
+</view>
+</view>
+</view>
+
+

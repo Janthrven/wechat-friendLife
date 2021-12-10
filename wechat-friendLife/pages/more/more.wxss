@@ -1,0 +1,25 @@
+/* pages/more/more.wxss */
+
+/* 页面背景颜色，仿微信的，让box看起来有层次感 */
+page{
+  background-color: #F5F5F5;
+}
+.box{
+  width: 100%;
+  height: 80rpx;
+  background-color: #FFFFFF;
+  display: flex;
+}
+
+.box2{
+  width: 100%;
+  margin-top: 10rpx;
+  height: 80rpx;
+  background-color: #FFFFFF;
+  display: flex;
+}
+
+.item{
+  margin-left: 30rpx;
+  margin-top: 10rpx;
+}

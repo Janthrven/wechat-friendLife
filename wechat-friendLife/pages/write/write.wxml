@@ -1,0 +1,49 @@
+<!--pages/write/write.wxml-->
+<view class="page">
+  <!-- 头部 -->
+  <view class="top">
+    <!-- 发表按钮 -->
+    <button class="send" type="primary" size="mini" bindtap='write1' >发表</button>
+  </view>
+  <!-- 文本输入框 -->
+  <view class="mar-l-r-40 content-edit">
+    <view class="content-text">
+      <textarea placeholder="随便写点什么吧..." focus="true" bindinput='getText' maxlength='-1' value="{{textareaValue}}"></textarea>
+    </view>
+  </view>
+
+<!-- 照片上传框 -->
+  <view class="image_content">
+    <view class='image' wx:for="{{img_url}}" wx:key="index">
+      <image class="moment_img" src="{{item}}" bindtap="previewImg"></image>
+    </view>
+    <view class='image' style='display:{{hideAdd?"none":"block"}}'>
+      <image bindtap="chooseimage" class="moment_img" src='/images/addImg.png'></image>
+    </view>
+  </view>
+
+  <!-- 底部功能栏 -->
+  <view class="bottom">
+    <van-divider />
+    <van-cell  title="添加日期" is-link  bindtap="showPopup"/>
+    <!-- 日期弹出框 -->
+    <van-popup
+  show="{{ show }}"
+  position="bottom"
+  custom-style="height: 30%;"
+  bind:close="onClose"
+>
+<van-datetime-picker
+  type="date"
+  title="日期选择"
+  value="{{ currentDate }}"
+  bind:input="onDateInput"
+  bind:confirm="onClose"
+  bind:cancel="onClose"
+  min-date="{{ minDate }}"
+  formatter="{{ formatter }}"
+/>
+</van-popup>
+  </view>
+
+</view>

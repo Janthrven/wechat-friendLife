@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "朋友圈",
+  "usingComponents": {
+    "van-divider": "@vant/weapp/divider/index"
+    }
+}

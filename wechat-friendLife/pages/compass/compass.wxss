@@ -1,0 +1,39 @@
+/* pages/compass/compass.wxss */
+
+.container2 {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* 图片区域样式 */
+
+image {
+  width: 80%;
+}
+
+/* 文字区域样式 */
+
+.status {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 大号字 */
+
+.bigTxt {
+  font-size: 30pt;
+  margin: 15rpx;
+  color: #3CB371;
+}
+
+/* 小号字 */
+
+.smallTxt {
+  font-size: 20pt;
+  margin: 15rpx;
+  color: #3CB371;
+}

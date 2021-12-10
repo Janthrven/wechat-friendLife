@@ -1,0 +1,58 @@
+{
+  "pages":[
+    "pages/me/me",
+    "pages/write/write",
+    "pages/browse/browse",
+    "pages/more/more",
+    "pages/myinformation/myinformation",
+    "pages/compass/compass",
+    "pages/video/video"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示" 
+    }
+  },
+  "window": {
+    "backgroundColor": "#fff",
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#F5F5F5",
+    "navigationBarTitleText": "我的城院生活",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#b6b6b6",
+    "selectedColor": "#444",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/me/me",
+        "iconPath": "images/nome.png",
+        "selectedIconPath": "images/me.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/write/write",
+        "iconPath": "images/nowrite.png",
+        "selectedIconPath": "images/write.png",
+        "text": "发表"
+      },
+      {
+        "pagePath": "pages/browse/browse",
+        "iconPath": "images/nobrowse.png",
+        "selectedIconPath": "images/browse.png",
+        "text": "朋友圈"
+      },
+      {
+        "pagePath": "pages/more/more",
+        "iconPath": "images/nomore.png",
+        "selectedIconPath": "images/more.png",
+        "text": "发现"
+      }
+    ]
+  },
+
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,65 @@
+/* pages/browse/browse.wxss */
+.swiper{
+  margin-top: 0rpx;
+  width: 100%;
+}
+.content{
+  display: inline-flexbox;
+  margin-top: 50rpx;
+    padding: 27rpx;
+    box-sizing: border-box;
+}
+/* 可能是页面布局问题 */
+/* 左右分开布局没有生效 被迫自定义布局营业*/
+.content-right{
+  flex: 1;
+}
+.next{
+  box-sizing:border-box;
+  margin-top: 20rpx;
+  flex:1;
+  width: 100%;
+}
+.img{
+  margin-left: 110rpx;
+  margin-top: 10rpx;
+  height: 390rpx;
+  width: 80%;
+}
+.date{
+  color: 	#808080;
+  font-size: 28rpx;
+  margin-top: 5rpx;
+  margin-left: 110rpx;
+}
+.text{
+  margin-left: 110rpx;
+  margin-top: 40rpx;
+    margin-bottom: 0rpx;
+    line-height: 40rpx;
+    font-size: 30rpx;
+}
+.head{
+  width: 85rpx;
+    height: 85rpx;
+    border-radius: 10rpx;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin-right: 20rpx;
+}
+.name{
+  margin-top: -80rpx;
+  margin-left: 110rpx;
+  display:flex;
+    font-weight: 400;
+    font-size: 30rpx;
+  color: 	#4169E1;
+}
+.delete{
+  color: 	#0000FF;
+  font-size: 26rpx;
+  margin-left: 30rpx;
+}
+.comment{
+  margin-left: 210rpx;
+}

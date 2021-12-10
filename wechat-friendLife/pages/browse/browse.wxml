@@ -1,0 +1,49 @@
+<!--pages/browse/browse.wxml-->
+
+
+<view class="swiper">
+  <swiper autoplay="true" indicator-dots="true" indicator-active-color="#FFC0CB">
+    <swiper-item>
+      <image src="{{img0}}" mode="scaleToFill" style="width: 100%;height: 110%;"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="{{img1}}" mode="scaleToFill" style="width: 100%;height: 100%;"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="{{img2}}" mode="scaleToFill" style="width: 100%;height: 100%;"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="{{img3}}" mode="scaleToFill" style="width: 100%;height: 100%;"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="{{img4}}" mode="scaleToFill" style="width: 100%;height: 100%;"></image>
+    </swiper-item>
+  </swiper>
+</view>
+<!-- 朋友圈内容 -->
+<view class="content">
+  <view wx:for="{{me[0]}}" wx:key="index">
+
+    <!-- 头像 -->
+    <view class="head">
+      <open-data type="userAvatarUrl" class="head"></open-data>
+    </view>
+    <!-- 朋友圈头像右边的内容 -->
+    <open-data type="userNickName" class="name"></open-data>
+    
+        <view class="next">
+      <text class="text">{{item[2]}}</text>
+    </view>
+    
+    <view class="next" >
+      <image class="img" src="{{item[0]}}" id="{{item[0]}}"  mode="scaleToFill" bindtap="previewImg"></image>
+
+    </view>
+    <view class="next">
+      <text class="date"> {{item[1]}}</text>
+      <text bindtap="delete" id="{{item[1]}}" class="delete">删除</text>
+      <text class="iconfont icon-pinglun comment" bindtap="showInput"></text>
+    </view>  
+    <van-divider />
+</view>
+</view>

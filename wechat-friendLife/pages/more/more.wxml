@@ -1,0 +1,19 @@
+<!--pages/more/more.wxml-->
+<view>
+<view class="box" bindtap="location">
+  <text class="iconfont icon-dingwei item" decode="{{true}}">&nbsp;看一看&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;></text>
+</view>
+
+<view class="box2" bindtap="scan">
+  <text class="iconfont icon-saoyisao item" decode="{{true}}">&nbsp;扫一扫&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;></text>
+</view>
+
+<view class="box2" bindtap="compass">
+  <text class="iconfont icon-zhinanzhen item" decode="{{true}}">&nbsp;指南针&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;></text>
+</view>
+
+<view class="box2" bindtap="write">
+  <text class="iconfont icon-yongyan item" decode="{{true}}">&nbsp;视频号&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;></text>
+</view>
+
+</view>
