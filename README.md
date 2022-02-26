@@ -22,7 +22,7 @@
 
 ## 数据库
 
-下面是我建立好的数据库，使用者可参考格式来建立自己的，不懂可加Q894685667，有费帮答
+下面是我建立好的数据库，使用者可参考格式来建立自己的，
 
 ![img](file:///C:/Users/ADMINI~1/AppData/Local/Temp/msohtmlclip1/01/clip_image002.jpg)
 
